@@ -1,0 +1,107 @@
+}
+}
+
+//Nilai 
+//header percabangan 
+#include <iostream>
+using namespace std;
+int main(){
+    /*
+    jika nilai >=90 sangat memuaskan
+    jika nilai >=80 memuaskan 
+    jika nilai >=75 cukup
+    nilai <75 tidak lulus
+    */
+int nilai;
+
+cout<<"masukan nilai = ";cin>>nilai;
+if(nilai >=90){
+    cout<<"sangat memuaskan";
+}
+else if (nilai >= 80){
+    cout<<"memuaskan";
+}
+else if (nilai >= 75){
+    cout<<"cukup";
+}
+else {
+    cout<<"Tidak Lulus";
+}
+}
+
+
+//Menggunakan atau
+
+//header percabangan 
+#include <iostream>
+using namespace std;
+int main(){
+    /*
+    jika nilai >=90 sangat memuaskan
+    jika nilai >=80 memuaskan 
+    jika nilai >=75 cukup
+    nilai <75 tidak lulus
+    && = and
+    || = or
+    nilai tidak boleh lebih dari 100 dan kurang dari 0
+    */
+int nilai;
+
+cout<<"masukan nilai = ";cin>>nilai;
+if (nilai <0 || nilai >= 100){
+    cout<<"Error";
+}
+else if (nilai >= 90){
+    cout<<"sangat memuaskan";
+}
+else if (nilai >= 80){
+    cout<<"memuaskan";
+}
+else if (nilai >= 75){
+    cout<<"cukup";
+}
+else {
+    cout<<"Tidak Lulus";
+}
+
+}
+
+//Keterangan
+
+#include <iostream>
+
+//header percabangan 
+#include <iostream>
+using namespace std;
+int main(){
+    /*
+    jika nilai >=90 sangat memuaskan
+    jika nilai >=80 memuaskan 
+    jika nilai >=75 cukup
+    nilai <75 tidak lulus
+    nilai tidak boleh lebih dari 100 dan kurang dari 0
+    && = and
+    || = or
+    */
+int nilai;
+string keterangan;
+cout<<"masukan nilai = ";cin>>nilai;
+if (nilai <0 && nilai >= 100){
+    keterangan = "Error";
+}
+else if (nilai >= 90){
+    keterangan = "Sangat memuaskan";
+}
+else if (nilai >= 80){
+    keterangan = "Memuaskan";
+}
+else if (nilai >= 75){
+    keterangan = "Cukup";
+}
+else {
+    keterangan = "Tidak Lulus";
+}
+
+cout<<keterangan;
+
+}
